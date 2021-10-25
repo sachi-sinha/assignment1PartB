@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+allprojects {
+    repositories {
+        mavenCentral()
+        maven{
+            url "https://jitpack.io"
+            credentials { username 'jp_fk8lqp6dujmv8u0jlsob8ibsu6' }
+        }
+    }
+}
+
+dependencies {
+    implementation 'joda-time:joda-time:2.10.12'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation 'com.github.sachi-sinha:assignment1:v1.0.3'
+}
+
+test {
+    useJUnitPlatform()
+}
