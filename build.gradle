@@ -16,7 +16,7 @@ allprojects {
 }
 
 dependencies {
-    implementation 'joda-time:joda-time:2.10.12'
+    implementation 'org.terasoluna.gfw:terasoluna-gfw-jodatime-dependencies:5.7.0.RELEASE'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
     implementation 'com.github.sachi-sinha:assignment1:v1.0.3'
